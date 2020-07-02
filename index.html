@@ -66,9 +66,7 @@
             aapPlaatje = document.createElement("img")
             aapPlaatje.src = "img/aap"+(i+1)+".jpg";
             aapPlaatje.id = (i+1);
-            aapPlaatje.addEventListener("clicks" , function () {
-                maakFavoriet(this.id);
-            });
+            aapPlaatje.addEventListener("clicks" , maakFavoriet);
             pictureHolders[i].appendChild(favoriet);
             pictureHolders[i].appendChild(aapPlaatje);
         }
